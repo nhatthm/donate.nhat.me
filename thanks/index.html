@@ -106,8 +106,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 28px 76px;
+  }
+
+  .divider {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 28px;
-    padding: 52px 28px 76px;
+    margin-top: 0;
+    padding-top: 52px;
     border-top: 1px solid var(--border);
   }
 
@@ -228,30 +238,32 @@
   </header>
 
   <main>
-    <div class="section-label">
-      <span class="eyebrow">If you want to do more</span>
-      <h2>Free ways to help</h2>
-    </div>
+    <div class="divider">
+      <div class="section-label">
+        <span class="eyebrow">If you want to do more</span>
+        <h2>Free ways to help</h2>
+      </div>
 
-    <div class="ways-card">
-      <div class="ways-row">
-        <span class="label">Star a repo</span>
-        <a class="value" href="https://github.com/nhatthm" target="_blank" rel="noopener noreferrer">github.com/nhatthm</a>
+      <div class="ways-card">
+        <div class="ways-row">
+          <span class="label">Star a repo</span>
+          <a class="value" href="https://github.com/nhatthm" target="_blank" rel="noopener noreferrer">github.com/nhatthm</a>
+        </div>
+        <div class="ways-row">
+          <span class="label">File the bug you found</span>
+          <span class="value">Reproductions welcome</span>
+        </div>
+        <div class="ways-row">
+          <span class="label">Tell a colleague</span>
+          <span class="value">It works better than ads</span>
+        </div>
       </div>
-      <div class="ways-row">
-        <span class="label">File the bug you found</span>
-        <span class="value">Reproductions welcome</span>
-      </div>
-      <div class="ways-row">
-        <span class="label">Tell a colleague</span>
-        <span class="value">It works better than ads</span>
-      </div>
-    </div>
 
-    <a class="cta" href="/">
-      <span>Back to the tip jar</span>
-      <span class="arrow">&rarr;</span>
-    </a>
+      <a class="cta" href="/">
+        <span>Back to the tip jar</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
   </main>
 </div>
 
