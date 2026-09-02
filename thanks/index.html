@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
 <style>
   :root {
-    --bg: #FFFDF8;
+    --bg: #FAF9F5;
     --text: #1B1B2A;
     --muted: #55555F;
     --border: #EFE9DD;
@@ -51,6 +51,22 @@
     background: var(--bg);
     color: var(--text);
   }
+
+  nav {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  nav a { color: var(--text); text-decoration: none; }
+  nav a:hover { opacity: .7; }
 
   header {
     display: flex;
@@ -191,7 +207,7 @@
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #17171F;
+      --bg: #121218;
       --text: #F2F1EC;
       --muted: #B7B6C2;
       --border: #2A2A36;
@@ -203,7 +219,7 @@
     }
   }
   :root[data-theme="dark"] {
-    --bg: #17171F;
+    --bg: #121218;
     --text: #F2F1EC;
     --muted: #B7B6C2;
     --border: #2A2A36;
@@ -218,6 +234,12 @@
 <body>
 
 <div class="page">
+  <nav>
+    <a href="https://nhat.me">About me</a>
+    <a href="https://go.nhat.io">Go registry</a>
+    <a href="https://fonts.nhat.io">Ligaturized fonts</a>
+  </nav>
+
   <header>
     <div class="badge">
       <span class="dot"></span>
