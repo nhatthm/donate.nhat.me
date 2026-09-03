@@ -5,9 +5,7 @@
 <title>Support nhatthm</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="preload" as="font" type="font/woff2" href="https://nhat.me/fonts/outfit.woff2?v=1" crossorigin>
 <style>
   :root {
     --bg: #F7F7FB;
@@ -25,6 +23,21 @@
     --bmc-btn: #FFDD00;
     --card-bg: #FFFFFF;
   }
+  @font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('https://nhat.me/fonts/outfit.woff2?v=1') format('woff2-variations'), url('https://nhat.me/fonts/outfit.woff2?v=1') format('woff2');
+  }
+  @font-face {
+    font-family: 'Outfit Fallback';
+    src: local('Arial');
+    ascent-override: 100.18%;
+    descent-override: 26.05%;
+    line-gap-override: 0%;
+    size-adjust: 99.82%;
+  }
   * { box-sizing: border-box; }
   html, body {
     margin: 0;
@@ -32,7 +45,7 @@
     background: var(--bg);
   }
   body {
-    font-family: "Outfit", system-ui, sans-serif;
+    font-family: "Outfit", "Outfit Fallback", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: var(--text);
   }
